@@ -86,8 +86,7 @@ Web-Development-Collections/
 **Clone the repository**
 
 ```bash
-git clone https://github.com/MOHAMMEDFAHD/Web-Development-Collections.git
-cd Web-Development-Collections
+https://github.com/MOHAMMEDFAHD/Web-Development-Collections.git
 ```
 
 **Explore and run a project**
