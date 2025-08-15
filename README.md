@@ -86,7 +86,7 @@ Web-Development-Collections/
 **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/Web-Development-Collections.git
+git clone https://github.com/MOHAMMEDFAHD/Web-Development-Collections.git
 cd Web-Development-Collections
 ```
 
