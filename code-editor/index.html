@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Code Editor – Programming Ocean Academy</title>
+  <meta name="description" content="Interactive web code editor supporting HTML, CSS, and JavaScript with live preview and simple validation tests inside the browser." />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container row">
+      
+      <div class="brand">
+
+        <div class="logo"></div>
+
+        <div class="title">Code Editor – Live In Browser</div>
+      
+      </div>
+
+      <div class="row">
+        <button class="btn secondary" id="saveBtn" title="Save work locally"><span>Save</span></button>
+        <button class="btn secondary" id="loadBtn" title="Load work file"><span>Load</span></button>
+        <input id="openFile" type="file" accept="application/json" hidden>
+      </div>
+
+
+    </div>
+  </header>
+
+  <main>
+
+
+    <!-- Left panel: Task description and settings -->
+    <aside class="card panel stack">
+      <h2>Task / Assignment</h2>
+
+      <textarea id="assignment" class="text" placeholder="Write the task description here..."></textarea>
+
+      <div class="stack">
+        <label for="testArea">Validation tests (JavaScript only – optional)</label>
+        <textarea id="testArea" class="text" placeholder="Write simple tests to append after the student's code to check the solution."></textarea>
+      </div>
+
+      <div class="muted">
+        Tip: <span class="kbd">Ctrl</span> + <span class="kbd">S</span> to save,
+        <span class="kbd">Ctrl</span> + <span class="kbd">Enter</span> to run.
+      </div>
+
+    </aside>
+
+    <!-- Middle: Editors and preview -->
+    <section class="stack" id="web-only">
+      <div id="webEditors" class="stack card panel">
+        <div class="row">
+          <h2>HTML / CSS / JS</h2>
+          <div class="row">
+            <button class="btn ok" id="runWeb">Run</button>
+            <button class="btn secondary" id="openPreview">Open preview in window</button>
+          </div>
+        </div>
+
+        <div class="tabs" id="webTabs" role="tablist" aria-label="Web editors">
+          <button class="tab active" role="tab" aria-selected="true" tabindex="0" data-pane="html">HTML</button>
+          <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-pane="css">CSS</button>
+          <button class="tab" role="tab" aria-selected="false" tabindex="-1" data-pane="js">JavaScript</button>
+        </div>
+
+        <!-- Link each editor to a clear panel name -->
+        <div class="editor-wrap" data-pane="html"><div id="ed_html" class="editor"></div></div>
+        <div class="editor-wrap" data-pane="css" hidden><div id="ed_css" class="editor"></div></div>
+        <div class="editor-wrap" data-pane="js" hidden><div id="ed_js" class="editor"></div></div>
+
+        <div class="stack">
+          <h3>Preview</h3>
+          <iframe id="preview" class="preview" sandbox="allow-scripts allow-same-origin allow-modals"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right: Output and log -->
+    <aside class="card panel stack">
+      <h2>Output</h2>
+      <div id="output" class="out" aria-live="polite"></div>
+      <div class="row">
+        <button class="btn warn" id="runTests">Run with tests</button>
+        <button class="btn secondary" id="clearOut">Clear log</button>
+      </div>
+      <h3>Notes</h3>
+      <ul class="muted" style="margin:0 0 8px 0; padding-inline-start:18px">
+        <li>Everything runs inside the browser in a sandbox.</li>
+        <li>You can save the work as a JSON file and restore it.</li>
+      </ul>
+    </aside>
+
+  </main>
+
+  <div class="footer">© 2025 Programming Ocean Academy — All rights reserved</div>
+
+  <!-- External libraries: Ace only -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.43.2/ace.js"
+    integrity="sha512-ZIa+FlPaGDSM+lTl9JaxnQvcfma7ETsOHd9Thbhp5u4RX1uYiDNW7XvUrXv4dJSPetXbiTzWilHEkSg4YpmltQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    onerror="(function(){var s=document.createElement('script'); s.src='https://cdn.jsdelivr.net/npm/ace-builds@1.43.2/src-min/ace.js'; document.head.appendChild(s);}())">
+  </script>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
