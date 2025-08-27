@@ -87,66 +87,6 @@ calendox/
 ├── appointments.sql       # MySQL schema
 ├── README.md
 └── assets/                # Icons, clock, images
-⚡ Installation & Setup
-Requirements
-PHP 7.4+
-
-MySQL/MariaDB
-
-Localhost server (e.g. XAMPP, MAMP, WAMP)
-
-Steps
-Clone the repository
-
-bash
-نسخ الكود
-git clone https://github.com/MOHAMMEDFAHD/web-development-collections.git
-cd web-development-collections/calendox
-Import the MySQL schema
-
-Use appointments.sql to create the necessary table in your DB
-
-Configure db.php
-
-php
-نسخ الكود
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$dbname = 'calendox';
-Run in your browser
-
-arduino
-نسخ الكود
-http://localhost/calendox/index.php
-🎯 Learning Outcomes
-By following this project, you’ll learn to:
-
-Design a responsive UI layout from scratch
-
-Build full CRUD functionality with PHP and MySQL
-
-Connect front-end logic to the backend via modals and JavaScript
-
-Manage time-based data and avoid overlaps
-
-Build self-contained projects without frameworks
-
-Deliver real-world applications deployable in educational or freelance environments
-
-💡 Use Cases
-💼 Portfolio-ready calendar app
-
-🧪 Base project for bookings, school scheduling, appointments
-
-🧑‍🏫 LMS or classroom drop-in solution
-
-💬 Extendable into team calendar, event planner, etc.
-
-🙌 Acknowledgements
-Special thanks to the freeCodeCamp community and all learners building open-source educational tools.
-
-If you’re an instructor, feel free to remix this into your course curriculum!
 
 📄 License
 This project is open-source and available under the MIT License.
