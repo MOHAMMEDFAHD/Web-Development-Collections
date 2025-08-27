@@ -1,0 +1,38 @@
+################# HTML ###############
+
+
+<h2>Todo List</h2>
+<input type="text" id="todoInput" placeholder="New todo..." />
+<button id="addTodo">Add</button>
+<ul id="todos"></ul>
+################# HTML ################
+
+
+################# CSS #################
+body { font-family: sans-serif; padding: 2rem; }
+#todoInput { padding: 0.5rem; width: 200px; }
+button { padding: 0.5rem 1rem; }
+ul { list-style: none; padding: 0; margin-top: 1rem; }
+li { margin: 0.5rem 0; cursor: pointer; }
+li.completed { text-decoration: line-through; color: #888; }
+################# CSS ###################
+
+
+################# JS #####################
+
+const input = document.getElementById('todoInput');
+const addBtn = document.getElementById('addTodo');
+const list = document.getElementById('todos');
+
+addBtn.addEventListener('click', () => {
+  const text = input.value.trim();
+  if (!text) return;
+  const li = document.createElement('li');
+  li.textContent = text;
+  li.addEventListener('click', () => li.classList.toggle('completed'));
+  list.appendChild(li);
+  input.value = '';
+});
+console.log('Todo List ready!');
+
+##################### JS ###################

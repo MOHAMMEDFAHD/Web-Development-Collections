@@ -1,0 +1,32 @@
+
+
+#################### HTML ######################
+<h2>Random Quote</h2>
+<button id="newQuote">New Quote</button>
+<blockquote id="quoteDisplay">Click “New Quote” to get inspired.</blockquote>
+#################### HTML ######################
+
+
+#################### CSS ######################
+
+body { font-family: sans-serif; padding: 2rem; text-align: center; }
+blockquote { font-size: 1.25rem; font-style: italic; margin: 1rem 0; }
+button { padding: 0.5rem 1rem; }
+#################### CSS ######################
+
+
+#################### JS ######################
+
+const quotes = [
+  "The best way to get started is to quit talking and begin doing.",
+  "Don’t let yesterday take up too much of today.",
+  "You learn more from failure than from success. Don’t let it stop you."
+];
+const display = document.getElementById('quoteDisplay');
+document.getElementById('newQuote').addEventListener('click', () => {
+  const q = quotes[Math.floor(Math.random() * quotes.length)];
+  display.textContent = q;
+});
+console.log('Quote Generator ready!');
+
+#################### JS ######################

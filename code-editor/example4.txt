@@ -1,0 +1,50 @@
+
+////////////// HTML /////////////////////
+<section class="card" style="max-width:560px;margin:24px auto;padding:18px">
+  <h2>RGB Mixer</h2>
+  <div class="row" style="gap:10px;align-items:center">
+    <label>R <input type="range" id="r" min="0" max="255" value="0"></label>
+    <label>G <input type="range" id="g" min="0" max="255" value="0"></label>
+    <label>B <input type="range" id="b" min="0" max="255" value="0"></label>
+  </div>
+  <div class="row" style="margin-top:12px;gap:12px;align-items:center">
+    <div id="swatch" style="width:80px;height:80px;border-radius:10px;border:1px solid rgba(255,255,255,.3)"></div>
+    <strong id="rgbText"></strong>
+  </div>
+</section>
+
+
+////////////// HTML /////////////////////
+
+
+
+
+
+////////////// CSS /////////////////////
+
+body { font-family: sans-serif; text-align: center; padding: 2rem; }
+button { margin: 0.5rem; padding: 0.5rem 1rem; font-size: 1rem; }
+
+////////////// CSS /////////////////////
+
+
+////////////// JS /////////////////////
+
+
+const r = document.getElementById('r');
+const g = document.getElementById('g');
+const b = document.getElementById('b');
+const sw = document.getElementById('swatch');
+const txt = document.getElementById('rgbText');
+
+function update(){
+  const rgb = `rgb(${r.value}, ${g.value}, ${b.value})`;
+  sw.style.backgroundColor = rgb;
+  txt.textContent = rgb;
+}
+[r,g,b].forEach(el => el.addEventListener('input', update));
+update();
+
+////////////// JS /////////////////////
+
+

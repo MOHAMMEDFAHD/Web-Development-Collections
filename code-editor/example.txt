@@ -1,0 +1,38 @@
+
+
+############## HTML ##################
+<h2>Color Switcher</h2>
+<button id="redBtn">Red</button>
+<button id="greenBtn">Green</button>
+<button id="blueBtn">Blue</button>
+<p>Click a button to change background color.</p>
+############## HTML ##################
+
+
+
+
+
+
+
+
+############## CSS ##################
+body { font-family: sans-serif; text-align: center; padding: 2rem; }
+button { margin: 0.5rem; padding: 0.5rem 1rem; font-size: 1rem; }
+############## CSS ##################
+
+
+
+############## JS ##################
+
+document.getElementById('redBtn').addEventListener('click', () => {
+  document.body.style.backgroundColor = 'lightcoral';
+});
+document.getElementById('greenBtn').addEventListener('click', () => {
+  document.body.style.backgroundColor = 'lightgreen';
+});
+document.getElementById('blueBtn').addEventListener('click', () => {
+  document.body.style.backgroundColor = 'lightblue';
+});
+console.log('Color Switcher ready!');
+
+############## JS ##################
