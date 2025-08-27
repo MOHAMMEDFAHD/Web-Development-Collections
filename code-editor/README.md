@@ -90,12 +90,10 @@ By building or exploring this editor, you’ll understand how to:
 
 ```text
 in-browser-code-editor/
-├── editor.html         # Single-file code editor
-├── assets/             # Optional: icons, themes, etc.
-├── assignment-packs/   # Starter challenges (e.g., Todo App, Theme Toggle)
-├── LICENSE
+├── index.html         # HTML code
+├── style.css          # CSS Code
+├── script.js          # JavaScript Code
 └── README.md
-📎 Resources
 🔗 Source Code (GitHub)
 
 📄 Starter File (editor.html)
