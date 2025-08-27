@@ -1,0 +1,267 @@
+:root{
+    --bg:#0f1221;
+    --body-bg: #0b0f1d;
+    --panel:#14182b;
+    --muted:#8b93a7;
+    --txt:#e9ecf1;
+    --brand:#7dd3fc;
+    --brand-2:#60a5fa;
+    --ok:#22c55e;
+    --warn:#eab308;
+    --err:#ef4444;
+    --radius:18px; 
+    --gap:14px;
+}
+
+
+*{
+    box-sizing:border-box
+}
+
+
+html, body{
+    height: 100%;
+}
+
+
+body{
+  font-family: sans-serif; 
+  background:linear-gradient(180deg, var(--body-bg), var(--bg) 35%); 
+  color: var(--txt);
+}
+
+
+header{
+  padding: 20px;
+  background:linear-gradient(90deg, rgba(96,165,250,.15), rgba(125,211,252,.1)); 
+  border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+
+.container{
+    max-width: 1200px;
+    margin-inline: auto;
+    padding:14px;
+    justify-content:space-between;
+}
+
+
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-weight: 700;
+}
+
+
+.brand .logo{
+     inline-size: 36px;
+    block-size: 36px;
+    border-radius: 10px;
+
+  /* one-shot shorthand prevents other background props from overriding */
+  background: url("https://programming-ocean.com/code-editors/newlogo.png")
+              center / cover no-repeat;
+}
+
+
+.title{
+    font-size: clamp(18px, 2vw, 22px)
+}
+
+
+main{
+    max-width: 1516px;
+    margin-inline: auto;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: 280px 1fr 360px;
+    gap: var(--gap);
+}
+
+
+@media (max-width: 1100px){
+     main{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.card{
+  background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03)); 
+  border: 1px solid rgba(255,255,255,.1); 
+  border-radius:var(--radius); 
+  box-shadow: 0 10px 30px rgba(0,0,0,.25)
+}
+
+.panel{
+    padding:16px
+}
+
+
+h2, h3{
+    margin:0 0 12px
+}
+
+
+.muted{
+    color:var(--muted);
+     font-size:13px
+}
+
+
+.stack{
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    flex-wrap:wrap;
+    justify-content:space-between; 
+}
+
+.btn{
+  appearance:none; 
+  border:none; 
+  background:linear-gradient(180deg, var(--brand-2), var(--brand)); 
+  color:#08111f; 
+  font-weight:700; 
+  padding:10px 14px; 
+  border-radius:12px; 
+  cursor:pointer; 
+  box-shadow:0 10px 24px rgba(96,165,250,.35);
+}
+
+
+.btn.secondary{
+  background:transparent; 
+  border:1px solid rgba(255,255,255,.15); 
+  color:var(--txt); 
+  box-shadow:none
+}
+
+
+.btn.warn{
+    background:linear-gradient(180deg, #f59e0b, #eab308);
+}
+
+
+.btn.ok{
+    background:linear-gradient(180deg, #34d399, #22c55e);
+}
+
+.btn.err{
+    background:linear-gradient(180deg, #fb7185, #ef4444);
+}
+
+
+.select, select, .text{
+  background:rgba(255,255,255,.03); 
+  border:1px solid rgba(255,255,255,.12); 
+  color:var(--txt); 
+  padding:10px 12px; 
+  border-radius:12px
+}
+
+
+textarea.text{
+    width:100%;
+     min-height:120px;
+}
+
+
+.tabs{
+    display:flex;
+     gap:8px;
+    flex-wrap:wrap;
+}
+
+
+.tab{
+  padding:8px 12px; 
+  border-radius:10px; 
+  border:1px solid rgba(255,255,255,.14); 
+  background:rgba(255,255,255,.03); 
+  cursor:pointer; 
+  font-weight:700; 
+  color:#FFF !important;
+}
+
+
+.tab.active{
+  background:linear-gradient(180deg, rgba(125,211,252,.18), rgba(96,165,250,.18)); 
+  color:#00FF00 !important;
+}
+
+
+.editor-wrap{
+  position:relative; 
+  border:1px solid rgba(255,255,255,.12); 
+  border-radius:14px; 
+  overflow:hidden; 
+  min-height:280px; 
+  background:#0b1020
+}
+
+.editor{
+  
+  inline-size:100%; 
+  
+  block-size:380px
+}
+
+iframe.preview{
+  inline-size:100%; 
+  block-size:380px; 
+  border:1px solid rgba(255,255,255,.12); 
+  border-radius:14px; 
+  background:white
+}
+
+
+.out{
+  /* font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Cascadia Code", "DejaVu Sans Mono", monospace;  */
+  background:#0a0e1a; 
+  border:1px solid rgba(255,255,255,.12); 
+  border-radius:12px; 
+  padding:10px; 
+  min-height:160px; 
+  overflow:auto; 
+  white-space:pre-wrap
+}
+
+
+
+.footer{opacity:.7;
+   font-size:12px;
+    text-align:center;
+     padding:12px}
+
+
+.badge{
+  font-size:12px; 
+  padding:4px 8px; 
+  border-radius:10px; 
+  background:rgba(255,255,255,.08); 
+  border:1px solid rgba(255,255,255,.14)
+}
+
+
+.kbd{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Cascadia Code", monospace; 
+  background:#0e1324; 
+  border:1px solid rgba(255,255,255,.15); 
+  border-radius:8px; 
+  padding:2px 6px
+}
+
+
+label{
+    font-size:13px; 
+    color:var(--muted);
+}
