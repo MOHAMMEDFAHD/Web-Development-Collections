@@ -80,13 +80,12 @@ Perfect for:
 calendox/
 │
 ├── index.php              # Main entry
-├── db.php                 # Database connection
-├── functions.php          # Helper functions
-├── calendar.js            # Rendering & interactivity
 ├── style.css              # Layout and design
+├── calendar.js            # Rendering & interactivity
+├── calendar.php
+├── connection.php          
 ├── appointments.sql       # MySQL schema
 ├── README.md
-└── assets/                # Icons, clock, images
 
 📄 License
 This project is open-source and available under the MIT License.
