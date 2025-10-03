@@ -1,4 +1,4 @@
-# 🌐 Web Development Collections
+#  Web Development Collections
 
 A **comprehensive and curated repository** of web development resources, best practices, and example projects — covering everything from **frontend design** to **backend architecture**, **databases**, and **deployment**.
 
@@ -6,7 +6,7 @@ This collection is built for **developers, students, and professionals** who wan
 
 ---
 
-## 📖 Table of Contents
+##  Table of Contents
 
 1. [About the Project](#about-the-project)
 2. [Features](#features)
@@ -19,7 +19,7 @@ This collection is built for **developers, students, and professionals** who wan
 
 ---
 
-## 📌 About the Project
+##  About the Project
 
 The **Web Development Collections** repository is a central hub for:
 
@@ -33,7 +33,7 @@ The goal is to help developers save time, follow best practices, and accelerate 
 
 ---
 
-## 🚀 Features
+##  Features
 
 * **Frontend Development**: Responsive design, animations, reusable UI components
 * **Backend Development**: API creation, authentication, middleware patterns
@@ -43,7 +43,7 @@ The goal is to help developers save time, follow best practices, and accelerate 
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 Web-Development-Collections/
@@ -58,7 +58,7 @@ Web-Development-Collections/
 
 ---
 
-## 🛠 Technologies Covered
+##  Technologies Covered
 
 **Frontend**
 
@@ -81,7 +81,7 @@ Web-Development-Collections/
 
 ---
 
-## ⚡ Getting Started
+##  Getting Started
 
 **Clone the repository**
 
@@ -99,7 +99,7 @@ npm start
 
 ---
 
-## 📊 Roadmap
+##  Roadmap
 
 * [ ] Add **Next.js** full-stack boilerplate
 * [ ] Include **GraphQL API** example
@@ -108,7 +108,7 @@ npm start
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions from the community!
 
@@ -132,20 +132,20 @@ We welcome contributions from the community!
 
 ---
 
-## 📜 License
+##  License
 
 Distributed under the **MIT License**.
 See `LICENSE` for more information.
 
 ---
 
-## ⭐ Show Your Support
+##  Show Your Support
 
 If you find this repository helpful:
 
-* **Star this repo** 🌟
-* **Fork it** 🍴
-* Share it with your network 📢
+* **Star this repo** 
+* **Fork it** 
+* Share it with your network 
 
 > Your contribution helps this collection grow into a go-to resource for developers worldwide.
 
